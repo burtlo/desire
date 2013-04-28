@@ -48,7 +48,7 @@ class ComplexApproach
   end
 
   def approaches
-    @approaches ||= [ DirectApproach, LungeApproach, MostInterestedWhenClose, MostInterestedWhenFar, NotInterestedApproach ]
+    @approaches ||= [ LungeApproach, MostInterestedWhenClose, MostInterestedWhenFar, NotInterestedApproach ]
   end
 
   def update

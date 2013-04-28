@@ -17,7 +17,7 @@ class DirectApproach
   end
 
   def factor
-    level * 4
+    level
   end
 
   def update

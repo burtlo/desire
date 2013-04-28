@@ -40,7 +40,7 @@ resolution 1024, 768
 # The scene that will be shown first when the game
 # starts.
 #
-first_scene :title
+first_scene :first
 
 #
 # Defines controls which are meta events. They can be used group button
@@ -60,4 +60,4 @@ end
 # Game.debug? method will return a true
 # value.
 #
-debug false
+debug true

@@ -34,7 +34,6 @@ class FirstScene < GameScene
 
   def show
     window.hide_cursor
-    @elapsed_ticks = 0
     space.add_object(hero)
   end
 
