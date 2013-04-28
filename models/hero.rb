@@ -1,7 +1,7 @@
 class Hero < Metro::UI::Sprite
 
   property :pulsing, type: :animation, path: "hero.png",
-    dimensions: Dimensions.of(64,64), time_per_image: 16
+    dimensions: Dimensions.of(128,128), time_per_image: 64
 
   def image
     pulsing.image

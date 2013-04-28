@@ -9,6 +9,11 @@ class Death < GameScene
     position: (Game.center + Point.new(0,-200,0)),
     font: { size: 60 }, color: "rgba(255,255,255,0.0)", align: 'center'
 
+  draw :quote, model: "metro::ui::label",
+    text: "There are two tragedies in life. \nOne is to lose your heart's desire. \nThe other is to gain it.\n\n - George Bernard Shaw, Man and Superman",
+    position: (Game.center + Point.new(0,100,0)),
+    font: { size: 40 }, color: "rgba(255,255,255,0.0)", align: 'center'
+
   after 1.tick do
 
     animate :score_board, to: { alpha: 0 }, interval: 1.second
@@ -20,7 +25,11 @@ class Death < GameScene
       after 2.seconds do
         animate :villain, to: { alpha: 0 }, interval: 1.second do
           animate :final_score, to: { alpha: 255 }, interval: 2.seconds do
-            transition_to :title
+            animate :quote, to: { alpha: 255 }, interval: 1.second do
+              after 4.seconds do
+                transition_to :title
+              end
+            end
           end
         end
       end
