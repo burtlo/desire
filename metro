@@ -40,7 +40,7 @@ resolution 1024, 768
 # The scene that will be shown first when the game
 # starts.
 #
-first_scene :death
+first_scene :title
 
 #
 # Defines controls which are meta events. They can be used group button
