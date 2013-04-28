@@ -1,0 +1,18 @@
+title:
+  model: metro::ui::label
+  text: "#{Game.name}"
+  font:
+    size: 120
+  color: rgba(255,0,0,1.0)
+  align: center
+menu:
+  model: metro::ui::menu
+  options:
+    selected: 0
+    items:
+    - model: metro::ui::label
+      text: Begin
+      font:
+        size: 30
+    - model: metro::ui::label
+      text: Exit

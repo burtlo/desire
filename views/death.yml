@@ -1,0 +1,9 @@
+# Using the power of YAML to define anchors and references it makes it easy
+# to generate a common view item and then add to it or manipulate it as needed.
+---
+final_score:
+  model: "metro::ui::label"
+  font:
+    size: 60
+  color: "rgba(255,255,255,0.0)"
+  align: 'center'

@@ -1,0 +1,3 @@
+# Using the power of YAML to define anchors and references it makes it easy
+# to generate a common view item and then add to it or manipulate it as needed.
+---
